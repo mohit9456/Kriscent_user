@@ -1,0 +1,20 @@
+.box-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-form label {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.box-form input {
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(223, 220, 220);
+    padding: 12px;
+    margin-bottom: 12px;
+}
