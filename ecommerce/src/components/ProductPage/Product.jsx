@@ -11,7 +11,7 @@ const Product = () => {
 
     useEffect(() => {
         const getProductData = async () => {
-            axios.get('http://localhost:5000/getusers')
+            axios.get('https://ecommerce-server1-x40z.onrender.com/getusers')
                 .then((user) =>
                     setProductData(user.data)
                 )

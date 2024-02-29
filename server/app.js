@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const productData = require('./models/userData');
+const productData = require('./src/models/userData');
 const cors = require('cors');
 const dotenv = require('dotenv')
 
@@ -19,6 +19,10 @@ mongoose.connect(process.env.MONGODB_URL)
         console.log(err);
     });
 
+
+app.get('/' , (req, res) => {
+    res.send("Hello World")
+})
 
 app.get('/getusers', (req, res) => {
     productData.find()
