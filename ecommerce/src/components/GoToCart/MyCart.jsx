@@ -33,7 +33,7 @@ const MyCart = () => {
   const handlePayment = () => {
     setTimeout(() => {
       toast.success("Payment Successful ! Your Product is On the Way");
-    }, 3000);
+    }, 2000);
     navigate('/');
     localStorage.clear();
   }
