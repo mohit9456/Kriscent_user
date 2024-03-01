@@ -20,6 +20,7 @@ mongoose.connect(process.env.MONGODB_URL)
     });
 
 
+
 app.get('/' , (req, res) => {
     res.send("Hello World")
 })
@@ -154,6 +155,6 @@ app.get('/getusers', (req, res) => {
 // ])
 
 
-app.listen(PORT, () => {
+app.listen(PORT,  () => {
     console.log("Server listening on Port", PORT);
 })
